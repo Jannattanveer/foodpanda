@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background-color: #f0f0f0;
+      margin: 0;
+    }
+    .modal {
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      padding: 32px;
+      text-align: center;
+    }
+    .modal h2 {
+      margin-bottom: 16px;
+    }
+    .button-container {
+      margin-bottom: 16px;
+    }
+    .button {
+      display: block;
+      width: 100%;
+      padding: 12px 16px;
+      margin-bottom: 8px;
+      border: none;
+      border-radius: 4px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    .facebook {
+      background-color: #2a08ec;
+      color: white;
+     
+    }
+    .facebook:hover{
+      background-color: #2a08ec;
+      transition: 1ease;
+      cursor: pointer;
+    }
+    .google {
+      background-color: #ffffff;
+      color: rgb(0, 0, 0);
+      border: 1px solid #474343;
+    }
+    .apple {
+      background-color: black;
+      color: white;
+    }
+    .login {
+      background-color: #e7377b;
+      color: white;
+    }
+    .signup {
+      background-color: transparent;
+      color: #5f5656;
+      border: 1px solid #050505;
+    }
+    .terms {
+      font-size: 14px;
+      color: #666;
+    }
+    .terms a {
+      color: #dd34aa;
+      text-decoration: none;
+    }
+    .close {
+      position: absolute;
+      top: 16px;
+      right: 16px;
+      font-size: 24px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="modal">
+    <span class="close">&times;</span>
+    <h2>Welcome!</h2>
+    <p>Sign up or log in to continue</p>
+    <div class="button-container">
+      <button class="button facebook">
+        <i class="fab fa-facebook"></i> Continue with Facebook
+      </button>
+      <button class="button google">
+        <i class="fab fa-google"></i> Continue with Google
+      </button>
+      <button class="button apple">
+        <i class="fab fa-apple"></i> Continue with Apple
+      </button>
+    </div>
+    <p>or</p>
+    <button class="button login">Log in</button>
+    <button class="button signup">Sign up</button>
+    <p class="terms">
+      By signing up, you agree to our <a href="#">Terms and Conditions</a> and <a href="#">Privacy Policy</a>.
+    </p>
+  </div>
+</body>
+</html>
